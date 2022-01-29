@@ -1,0 +1,29 @@
+<div class="input-group mb-3 searchBar">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+    </div>
+    <input class="form-control" placeholder="Search by item name" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+<table class="table table-hover">
+    <thead class="thead-light">
+        <th>Product Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>
+            <!--Use routerLink property for redirecting the links: eg. routerLink="/order"-->
+            <a class="btn btn-sm btn-success text-white" ><i class="fa fa-plus-square"></i> Create New</a>
+        </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of products">
+            <th (click)="openForEdit(item.OrderId)">{{item.ItemId}}</th>
+            <th (click)="openForEdit(item.OrderId)">{{item.Name}}</th>
+            <th (click)="openForEdit(item.OrderId)">{{item.Price}}</th>
+            <th>
+                <a class="btn btn-sm btn-danger text-white ml-1"
+                (click)="deleteItem(item.Id)">
+                <i class="fas fa-trash-alt"></i></a>
+            </th>
+        </tr>
+    </tbody>
+</table>

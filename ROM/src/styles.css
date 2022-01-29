@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+.jumbotron {
+    background-color: #fff;
+    padding-top: 0;
+}
+
+.input-group-text {
+    width: 40px;
+}
+
+table.table-hover tbody tr:hover {
+    cursor: pointer;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a:link, a:hover {
+    cursor: pointer;
+}
+
+.mainLogo {
+    cursor: pointer;
+}
+
+.searchBar {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0;
+}
